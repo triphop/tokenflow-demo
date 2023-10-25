@@ -84,7 +84,7 @@ class Preprocess(nn.Module):
             self.depth_maps = self.prepare_depth_maps()
         self.scheduler = scheduler
         
-        self.unet.enable_xformers_memory_efficient_attention()
+        # self.unet.enable_xformers_memory_efficient_attention()
         print(f'[INFO] loaded stable diffusion!')
     
     
