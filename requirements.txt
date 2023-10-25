@@ -16,7 +16,7 @@ python-multipart
 uvicorn
 tensorflow-probability
 fastapi
-diffusers
+diffusers==0.14.0
 ftfy
 transformers
 opencv-python 
@@ -28,4 +28,6 @@ xformers
 tensorboard
 kornia
 av
+
+gradio==3.29
 
