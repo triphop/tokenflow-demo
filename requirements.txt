@@ -1,4 +1,21 @@
-pillow
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+
+torch==2.1.0+cu118; sys_platform != 'darwin'
+torch==2.1.0; sys_platform == 'darwin'
+torchvision==0.16.0+cu118; sys_platform != 'darwin'
+torchvision==0.16.0; sys_platform == 'darwin'
+onnxruntime==1.16.1; sys_platform == 'darwin' and platform_machine != 'arm64'
+onnxruntime-silicon==1.16.0; sys_platform == 'darwin' and platform_machine == 'arm64'
+onnxruntime-gpu==1.16.1; sys_platform != 'darwin'
+tensorflow==2.13.0rc1; sys_platform == 'darwin'
+tensorflow==2.12.0; sys_platform != 'darwin'
+
+kaleido 
+python-multipart 
+uvicorn
+tensorflow-probability
+fastapi
 diffusers
 ftfy
 transformers
@@ -11,4 +28,4 @@ xformers
 tensorboard
 kornia
 av
-torchvision==0.15.2
+
